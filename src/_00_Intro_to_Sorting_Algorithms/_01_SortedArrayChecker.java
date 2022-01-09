@@ -9,7 +9,7 @@ public class _01_SortedArrayChecker {
      * and false otherwise.
      */
     public static boolean intArraySorted(int[] arr) {
-        
+        int [];
         return false;
     }
 
