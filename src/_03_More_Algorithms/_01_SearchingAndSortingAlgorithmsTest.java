@@ -56,15 +56,15 @@ public void testSearchAndAccumulate() throws Exception {
 
     // 5. The Morse code for SOS is "... --- ..."
     // Create a method that can tell if SOS is contained in a message.
-//    @Test
-//    public void testFindString() throws Exception {
-//        List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split(" / "));
-//        assertEquals(true, Algorithms.containsSOS(message1));
-//        List<String> message2 = Arrays.asList(
-//                ".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..-- / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --. .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .- .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / -- -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- . .- ...."
-//                        .split("/"));
-//        assertEquals(false, Algorithms.containsSOS(message2));
-//    }
+  @Test
+  public void testFindString() throws Exception {
+      List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split(" / "));
+      assertEquals(true, Algorithms.containsSOS(message1));
+      List<String> message2 = Arrays.asList(
+              ".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..-- / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --. .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .- .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / -- -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- . .- ...."
+                      .split("/"));
+      assertEquals(false, Algorithms.containsSOS(message2));
+  }
 
     // 6. Write a Morse code translator to read the messages. Just kidding!
 

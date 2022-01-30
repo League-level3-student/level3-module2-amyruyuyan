@@ -57,4 +57,18 @@ public class Algorithms {
 		}
 		return words.get(0);
 	}
+
+	public static Object containsSOS(List<String> message2) {
+		boolean SOS = false;
+		for (int i = 0; i < message2.size(); i++) {
+			if(message2.get(i).contains("... --- ...")) {
+				SOS = true;
+			}
+			else {
+				SOS = false;
+			}
+		}
+		return SOS;
+	
+	}
 }
