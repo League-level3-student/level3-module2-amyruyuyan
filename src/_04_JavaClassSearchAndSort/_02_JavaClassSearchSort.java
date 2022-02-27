@@ -9,7 +9,9 @@ import java.util.List;
 public class _02_JavaClassSearchSort {
     
     public static int[] arraySort(int[] arr) {
-        
+        for (int i : arr) {
+        	
+        }
         return null;
     }
     
