@@ -98,12 +98,15 @@ public class Algorithms {
 	public static List<String> sortWords(List<String> words) {
 		for (int i = 0; i < words.size(); i++) {
 			for (int k = 0; k < words.size() - 1; k++) {
-				if(words.get(k).compareTo(k+1) > 0) {
-					
+				if(words.get(k).compareTo(words.get(k+1)) > 0) {
+					String tempMost = words.get(k);
+					words.set(k, words.get(k+1));
+					words.set(k+1, tempMost);
 				}
 			}
-		return words;
+		
 	}
+		return words;
 	
-	
+}
 }
