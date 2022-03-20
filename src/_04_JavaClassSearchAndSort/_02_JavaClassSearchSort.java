@@ -12,23 +12,39 @@ public class _02_JavaClassSearchSort {
     
     public static int[] arraySort(int[] arr) {
     	Arrays.sort(arr);
-    	Arrays.binarySearch(arr, 4);
-        return arr;
+        for( int i : arr ) {
+            System.out.print(i);
+        }
+        return arr; 
     }
     
     public static List<Double> listSort(List<Double> list){
         Collections.sort(list);
-        Collections.binarySearch(list, list.get(0));
-        return null;
+        for (Double s : list) {
+        	System.out.println(s);
+        }
+        return list;
     }
 
     public static Boolean arraySearch(char[] arr, char key) {
-        
-        return null;
+    	Arrays.sort(arr);
+        int results = Arrays.binarySearch(arr, key);
+        if (results >= 0) {
+        	return true;
+        }
+        else {
+        	return false;
+        }
     }
     
     public static Boolean listSearch(List<Character> list, Character key) {
-        
-        return null;
+    	 Collections.sort(list);
+         int results = Collections.binarySearch(list, key);
+         if (results >= 0) {
+        return true;
+         }
+         else{
+        	return false;
+        }
     }
 }
